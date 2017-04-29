@@ -10,7 +10,7 @@ error_reporting(E_ERROR);
 
 //Hardcoded API is a no no i know :/
 
-define('APIKEY', '14a9f8c6f825091c7ca23da3bce1dfd8'); // <= CHANGE THIS !!
+define('APIKEY', 'eb1e3e23c5ed8e7e50a0f510f5a63d24'); // <= CHANGE THIS !!
 
 // Path definitions
 define('IMAGES', 'images/');
@@ -46,7 +46,7 @@ foreach( $servers_raw as $server_raw ){
 		'server_id' => $server_raw['home_id'],
 		'server_name' => substr($server_raw['home_path'],strrpos($server_raw['home_path'],'/')+1),
 		'name' => $server_raw['home_name'],
-		'game' => $server_raw['mod_key'],
+		'game' => $server_raw['game_key'],
 		'ip' => $server_raw['ip'],
 		'port' => $server_raw['port'],
 		'path' => $server_raw['home_path'],
